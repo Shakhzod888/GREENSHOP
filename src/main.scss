@@ -4,3 +4,25 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
+.productBox {
+  .productHover {
+    display: none;
+  }
+
+  &:hover {
+    .productHover {
+      display: flex;
+    }
+  }
+}
+
+.dashboardBottom {
+  width: 110%;
+  margin-top: 30px;
+  position: relative;
+  right: 30px;
+  height: 470px;
+  object-fit: contain;
+  background-image: url("../src/components/assets/dashboardBottom.png");
+}

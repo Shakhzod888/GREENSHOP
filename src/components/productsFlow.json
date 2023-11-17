@@ -1,0 +1,62 @@
+[
+  {
+    "image": "../components/assets/flower1.png",
+    "name": "Barberton Daisy",
+    "price": "$119.00"
+  },
+  {
+    "image": "../assets/flower2.png",
+    "name": "Blushing Bromeliad",
+    "price": "$139.00"
+  },
+  {
+    "image": "../assets/flower2.png",
+    "name": "Blushing Bromeliad",
+    "price": "$139.00"
+  },
+  {
+    "image": "../assets/flower2.png",
+    "name": "Blushing Bromeliad",
+    "price": "$139.00"
+  },
+  {
+    "image": "../assets/flower2.png",
+    "name": "Blushing Bromeliad",
+    "price": "$139.00"
+  },
+  {
+    "image": "../assets/flower2.png",
+    "name": "Blushing Bromeliad",
+    "price": "$139.00"
+  },
+  {
+    "image": "../assets/flower2.png",
+    "name": "Blushing Bromeliad",
+    "price": "$139.00"
+  },
+  {
+    "image": "../assets/flower2.png",
+    "name": "Blushing Bromeliad",
+    "price": "$139.00"
+  },
+  {
+    "image": "../assets/flower2.png",
+    "name": "Blushing Bromeliad",
+    "price": "$139.00"
+  },
+  {
+    "image": "../assets/flower2.png",
+    "name": "Blushing Bromeliad",
+    "price": "$139.00"
+  },
+  {
+    "image": "../assets/flower2.png",
+    "name": "Blushing Bromeliad",
+    "price": "$139.00"
+  },
+  {
+    "image": "../assets/flower2.png",
+    "name": "Blushing Bromeliad",
+    "price": "$139.00"
+  }
+]

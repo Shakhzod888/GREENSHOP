@@ -1,16 +1,20 @@
 import { Box, Button, Flex, Text } from "@mantine/core";
 import React from "react";
 import Slider from "@mui/material/Slider";
+import Flower1 from "../assets/flower1.png";
+import Flower2 from "../assets/flower2.png";
+import Url from "../productsFlow.json";
 
 function Products() {
   const [range, setRange] = React.useState([5, 30]);
   function handleChanges(event, newValue) {
     setRange(newValue);
   }
+
   return (
-    <Box w={"100%"} h={"150vh"}>
+    <Box w={"100%"} h={"auto"}>
       <Flex justify={"space-between"}>
-        <Box w={"25%"} h={"150vh"} bg={"#FBFBFB"}>
+        <Box w={"310px"} h={"auto"} bg={"#FBFBFB"}>
           <Box pt={14}>
             <Text pl={30} c={"#3D3D3D"} fz={18} fw={700}>
               Categories
@@ -237,9 +241,115 @@ function Products() {
                 </Flex>
               </Flex>
             </Box>
+            <Box className="dashboardBottom"></Box>
           </Box>
         </Box>
-        <Box w={"70%"} h={"100vh"} bg={"black"}></Box>
+        <Box w={"70%"} h={"100vh"}>
+          <Flex gap={50} justify={"space-between"}>
+            <Flex gap={40}>
+              <Text
+                className=""
+                c={"#46A358"}
+                fz={17}
+                fw={700}
+                style={{ textDecoration: "underline" }}
+              >
+                All Plants
+              </Text>
+              <Text className="" c={"#3D3D3D"} fz={17} fw={400}>
+                New Arrivals
+              </Text>
+              <Text className="" c={"#3D3D3D"} fz={17} fw={400}>
+                Sale
+              </Text>
+            </Flex>
+            <Flex gap={10}>
+              <Text fz={17} c={"#3D3D3D"} fw={400}>
+                Short by: Default sorting
+              </Text>
+              <Text>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="8"
+                  viewBox="0 0 12 8"
+                  fill="none"
+                >
+                  <path
+                    d="M10.6666 1.66667L5.99998 6.33333L1.33331 1.66667"
+                    stroke="#3D3D3D"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </Text>
+            </Flex>
+          </Flex>
+          <Flex mt={20} justify={"space-between"} gap={60} wrap={"wrap"}>
+            {Url.map((url, index) => (
+              <Box
+                key={index}
+                pos={"relative"}
+                className="productBox"
+                w={250}
+                h={310}
+                bg={"#FBFBFB"}
+              >
+                <img src={Flower1} alt="" />
+                <Flex
+                  justify={"space-around"}
+                  gap={40}
+                  align={"center"}
+                  pl={50}
+                  bottom={60}
+                  pos={"absolute"}
+                  className="productHover"
+                >
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      {/* Your SVG path goes here */}
+                    </svg>
+                  </div>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      {/* Your SVG path goes here */}
+                    </svg>
+                  </div>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      {/* Your SVG path goes here */}
+                    </svg>
+                  </div>
+                </Flex>
+                <Text pt={5} c={"#3D3D3D"} fz={17} fw={400}>
+                  {url.name}
+                </Text>
+                <Text c={"#46A358"} fz={18} fw={700}>
+                  {url.price}
+                </Text>
+              </Box>
+            ))}
+          </Flex>
+        </Box>
       </Flex>
     </Box>
   );
